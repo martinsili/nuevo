@@ -1,0 +1,267 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/* Body */
+body {
+    margin: 0 16px;
+    background-color: white;
+    font-family: "Roboto", serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Titulos */
+h1, h3 {
+    font-family: "Playwrite IT Moderna", serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+h2 {
+    color: dimgrey;
+    font-size: 30px;
+    text-align: right;
+    font-family: "Rock Salt";
+    margin: 30px;
+}
+
+h5 {
+    text-align: center;
+    margin: 16px 0px;
+}
+
+/* Navbar */
+.nav-li{
+    list-style: none;
+}
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px solid black;
+    background-color: lightgray;
+}
+
+.navbar :hover{
+    color: blue;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link{
+    font-size: 24px;
+    text-decoration: none;
+    border: 2px solid black;
+    color:#000000;
+}
+
+/* Imagenes */
+/* Logo */
+.firma-logo{
+    margin: 8px;
+    display:inline-block black; 
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 70px;
+    height: 30px;
+}
+
+/* Obras */
+.misobras {
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-only;
+    gap: 32px;
+}
+
+.imagenes-obras{
+    text-decoration: none;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.imagenes-obras img{
+    width: 300px;
+    height: 450px;
+}
+
+.p-obras{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Imagenes Inicio */
+.pinceles {
+    border: 1px solid black;
+    float: left; 
+    margin: 10px;
+    padding: 10px;
+    margin-left: 60px; 
+    width: 200px; 
+}
+
+.manchas{
+    background-image: url(../imagenesproyecto.html/manchasgrises.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Imagenes Influencias */
+.dali{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-left: 10px;
+}
+
+/* Imagenes Acerca de Mi */
+.martin {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Ocupa toda la altura de la ventana */
+    margin: 100px;               /* Elimina márgenes por defecto */
+    padding: 50px;
+    border: 1px solid black; /* Añade un borde de 1px */
+    max-width: 100%;          /* Asegura que la imagen no se desborde */
+    height: auto;             /* Mantiene la proporción de la imagen */
+}
+
+/* Imagen Contacto */
+.imagen-contacto {
+    width: 400px;
+    height: 500px;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    float: inline-end;
+    margin-inline-end: 30px;
+}
+
+/* Main Content */
+.parrafo {
+    font-size: 44px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Form */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    padding: 30px; 
+}
+
+.grid-item {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Button Style */
+.btn-primary {
+    background-color: darkgray;
+    color: white;
+    width: 150px;
+    height: 70px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+/*footer ver si no lo saco*/
+.copyright {
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;
+    margin: 60px;
+  }
+
+  .firma-logo {
+    margin: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    width: 70px;
+    height: 30px;
+    float: right;
+}
+
+footer {
+  text-align: right;
+  font-size: 10px;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+    .navbar {
+        display: block;
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .parrafo {
+        font-size: 32px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
