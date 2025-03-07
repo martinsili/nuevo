@@ -87,17 +87,37 @@ ul.menu {
 }
 
 /* Estilos del botón de menú (hamburger) */
-
-.menu-toggle {
+/* Estilo básico para ocultar el menú en dispositivos pequeños */
+.menu {
     display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mostrar el menú cuando se activa la clase 'active' */
+.menu.active {
+    display: block;
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+    background: none;
+    border: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
     height: 21px;
-    border: none;
-    background: transparent;
+    width: 30px;
     cursor: pointer;
 }
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+}
+
 
 .menu-toggle .bar {
     width: 30px;
@@ -296,9 +316,7 @@ footer {
     }
 
     /* Mostrar el menú cuando el botón hamburguesa es presionado */
-    .menu-toggle.active {
+    .menu.active {
         display: flex; /* Cambiar display a flex cuando el menú está activo */
     }
-
-    
 }
