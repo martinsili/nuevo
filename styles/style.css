@@ -296,7 +296,7 @@ footer {
     }
 
     /* Mostrar el menú cuando el botón hamburguesa es presionado */
-    .menu.active {
+    .menu-toggle.active {
         display: flex; /* Cambiar display a flex cuando el menú está activo */
     }
 
