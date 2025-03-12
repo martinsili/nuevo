@@ -1,4 +1,4 @@
-h1, h3 {
+h1 {
     font-family: "Playwrite IT Moderna", serif;
     font-size: 60px;
     text-align: center;
@@ -9,7 +9,15 @@ h1, h3 {
 h2 {
     color: dimgrey;
     font-size: 30px;
-    text-align: right;
+    text-align: center;
     font-family: "Rock Salt";
     margin: 30px;
+}
+
+h3 {
+    font-family: "Playwrite IT Moderna", serif;
+    font-size: 60px;
+    text-align: left;
+    margin: 50px;
+    padding: 20px; 
 }
