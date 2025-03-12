@@ -2,7 +2,7 @@
 /* Logo */
 .firma-logo{
     margin: 8px;
-    display:inline-block black; 
+    display:inline-block rgba(31, 30, 30, 0.137); 
     border: 1px solid #000000;
     border-radius: 4px;
     width: 70px;
@@ -24,21 +24,26 @@
     padding: 16px;
     border: 1px solid black;
     border-radius: 5px;
+    
 }
 
 .imagenes-obras img{
     width: 300px;
     height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-obras img:hover {
+    transform: scale(1.1); 
 }
 
 /* Imagenes Inicio */
 .pinceles {
     border: 1px solid black;
-    float: left; 
-    margin: 10px;
-    padding: 10px;
-    margin-left: 60px; 
-    width: 200px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 450px;  
 }
 
 .manchas{
@@ -60,42 +65,28 @@
     margin-left: 10px;
 }
 
+
 /* Imagenes Acerca de Mi */
 .martin {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;          
-    margin: 100px;               
-    border: 1px solid black; 
-    max-width: 100%;          
-    height: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 450px;            
 }
-               
+
 
 /* Imagen Contacto */
 .imagen-contacto {
-    width: 400px;
-    height: 500px;
-    text-decoration: none;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    float: inline-end;
-    margin-inline-end: 30px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 450px;   
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
- 
 
