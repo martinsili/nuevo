@@ -158,29 +158,21 @@ ul.menu {
     margin-left: 10px;
 }
 
+
 /* Imagenes Acerca de Mi */
 .martin {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    height: 100vh;          
-    margin: 100px;          
-    padding: 50px;
-    border: 1px solid black; 
-    max-width: 100%;          
-    height: auto;             
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 450px; /            
 }
 
 /* Imagen Contacto */
 .imagen-contacto {
-    width: 400px;
-    height: 500px;
-    text-decoration: none;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    float: inline-end;
-    margin-inline-end: 30px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 450px; /  
 }
 
 /* Main Content */
@@ -286,6 +278,11 @@ footer {
 
     .firma-logo {
         width: 80px; 
+    }
+
+    .imagen-contacto {
+        width: 100%;
+        height: auto;
     }
 
     .martin {
