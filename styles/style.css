@@ -82,6 +82,7 @@ ul.menu {
     color: white;
     font-size: 18px;
     transition: color 0.3s;
+    margin-right: 15px;
 }
 
 .nav-link:hover {
@@ -257,11 +258,13 @@ footer {
         flex-direction: column; 
     }
 
-    .nav-link {
-        padding: 10px; /* Adjust padding for nav links */
-        font-size: 18px; /* Increase font size for better readability */
+    .nav-li {
+        margin-right: 0;
     }
     
+    .nav-link {
+        margin-right: 0;
+    }
     .contenedor {
         padding: 15px; 
     }
