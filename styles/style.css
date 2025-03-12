@@ -250,25 +250,29 @@ footer {
     }
 
     h1 {
-        font-size: 24px; /* Adjust font size for headings */
+        font-size: 24px; 
     }
 
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
+        flex-direction: column; 
+    }
+
+    .nav-li {
+        margin-right: 0; 
     }
 
     .nav-link {
-        padding: 10px; /* Adjust padding for nav links */
-        font-size: 18px; /* Increase font size for better readability */
+        padding: 10px; 
+        font-size: 18px; 
     }
 
     .contenedor {
-        padding: 15px; /* Add padding for the container */
+        padding: 15px; 
     }
 
     .pinceles {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .misobras {
@@ -282,17 +286,17 @@ footer {
     }
 
     .firma-logo {
-        width: 80px; /* Adjust logo size */
+        width: 80px; 
     }
     
     .dali {
-        width: 100%; /* Make the image responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
+        width: 100%; 
+        height: auto;
+    } 
     
     .parrafo {
-        font-size: 18px; /* Base font size */
-        line-height: 1.6; /* Improve readability */
+        font-size: 18px; 
+        line-height: 1.6; 
         margin: 20px 0;
     }
     
@@ -301,8 +305,8 @@ footer {
     }
 
     .p-obras {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        margin: 10px 0; /* Reduce margin for smaller screens */
+        font-size: 16px; 
+        margin: 10px 0; 
     }
 
     
