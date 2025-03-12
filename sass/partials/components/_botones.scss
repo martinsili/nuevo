@@ -1,34 +1,22 @@
 /* Button */
+
 .btn-primary {
-    background-color: darkgray;
-    color: white;
-    width: 150px;
-    height: 70px;
-    font-size: 12px;
-    border-radius: 4px;
-    border: none;
+    @include button-style(#3498db, white);
 }
 
 .btn-primary:hover {
-    background-color: gray;
+    @include button-style(#2ecc71, white);
     cursor: pointer;
 }
 
-/* Estilos del botón de menú (hamburger) */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+.button {
+    background-color: map-get($colors, primary);
+    color: white;
+    padding: 10px 20px;
     border: none;
-    background: transparent;
-    cursor: pointer;
-}
+    border-radius: 5px;
 
-.menu-toggle .bar {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    border-radius: 4px;
+    &:hover {
+        background-color: darken(map-get($colors, primary), 10%);
+    }
 }

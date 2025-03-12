@@ -63,15 +63,15 @@
 /* Imagenes Acerca de Mi */
 .martin {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    height: 100vh;           /* Ocupa toda la altura de la ventana */
-    margin: 100px;               /* Elimina márgenes por defecto */
-    padding: 50px;
-    border: 1px solid black; /* Añade un borde de 1px */
-    max-width: 100%;          /* Asegura que la imagen no se desborde */
-    height: auto;             /* Mantiene la proporción de la imagen */
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+    margin: 100px;               
+    border: 1px solid black; 
+    max-width: 100%;          
+    height: auto;
 }
+               
 
 /* Imagen Contacto */
 .imagen-contacto {

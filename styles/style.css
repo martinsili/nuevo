@@ -32,6 +32,7 @@ h1, h3 {
     font-family: "Playwrite IT Moderna", serif;
     font-size: 60px;
     text-align: center;
+    color: #000000;
     margin: 50px;
     padding: 20px;
 }
@@ -47,6 +48,7 @@ h2 {
 h5 {
     text-align: center;
     margin: 16px 0px;
+    color: #000000;
 }
 
 /* Navbar */
@@ -55,7 +57,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    background-color:black;
 }
 
 .firma-logo {
@@ -83,27 +85,7 @@ ul.menu {
 }
 
 .nav-link:hover {
-    color: #f39c12; /* Color cuando se pasa el mouse por encima */
-}
-
-/* Estilos del botón de menú (hamburger) */
-
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    border-radius: 4px;
+    color: #f39c12; 
 }
 
 /* Imagenes */
@@ -178,14 +160,14 @@ ul.menu {
 /* Imagenes Acerca de Mi */
 .martin {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;     /* Centra verticalmente */
-    height: 100vh;           /* Ocupa toda la altura de la ventana */
-    margin: 100px;               /* Elimina márgenes por defecto */
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;          
+    margin: 100px;          
     padding: 50px;
-    border: 1px solid black; /* Añade un borde de 1px */
-    max-width: 100%;          /* Asegura que la imagen no se desborde */
-    height: auto;             /* Mantiene la proporción de la imagen */
+    border: 1px solid black; 
+    max-width: 100%;          
+    height: auto;             
 }
 
 /* Imagen Contacto */
@@ -262,17 +244,17 @@ footer {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
+    body{
+        margin: 0 16px;
+    } 
+    
     ul.menu {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
-        display: none; /* Ocultamos el menú en dispositivos móviles */
+        display: none; 
     }
 
     .nav-li {
@@ -288,16 +270,50 @@ footer {
     }
 
     .firma-logo {
-        width: 100px; /* Reducir tamaño del logo en móviles */
+        width: 100px; 
     }
 
-    .menu-toggle {
-        display: flex; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+    
+    .parrafo {
+        font-size: 32px;
     }
 
-    /* Mostrar el menú cuando el botón hamburguesa es presionado */
-    .menu-toggle.active {
-        display: flex; /* Cambiar display a flex cuando el menú está activo */
+    .navbar a {
+        font-size: 18px;
     }
 
+    .navbar {
+        grid-template-rows: 50 px 20 px;
+        grid-template-columns: (5 1fr);
+        grid-template-areas: 
+        "firma-logo-mobile firma-logo-mobile firma-logo-mobile firma-logo-mobile firma-logo-mobile"
+        "nav-li-mobile nav-li-mobile nav-li-mobile nav-li-mobile nav-li-mobile";
+
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .grid-container{
+        grid-template-rows: 50 px 20 px;
+        grid-template-columns: (4 1fr);
+        grid-template-areas: 
+        "grid-item grid-item grid-item grid-item "
+
+    }
+
+    .misobras{
+        grid-template-rows: 50 px 20 px;
+        grid-template-columns: (3 1fr);
+        grid-template-areas: 
+        "imagenes-obras imagenes-obras imagenes-obras";
+        width: 165px;
+        height: 220px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
