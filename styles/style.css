@@ -74,7 +74,7 @@ ul.menu {
 }
 
 .nav-li {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .nav-link {
@@ -82,7 +82,7 @@ ul.menu {
     color: white;
     font-size: 18px;
     transition: color 0.3s;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .nav-link:hover {
@@ -287,6 +287,11 @@ footer {
     .firma-logo {
         width: 80px; 
     }
+
+    .martin {
+        width: 100%; 
+        height: auto;
+    } 
     
     .dali {
         width: 100%; 
