@@ -257,11 +257,11 @@ footer {
         flex-direction: column; 
     }
 
-    .nav-li {
-        margin-right: 0; 
+    .nav-link {
+        padding: 10px; /* Adjust padding for nav links */
+        font-size: 18px; /* Increase font size for better readability */
     }
-
-   
+    
     .contenedor {
         padding: 15px; 
     }
