@@ -244,76 +244,75 @@ footer {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-
-    body{
-        margin: 0 16px;
-    } 
-    
-    ul.menu {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
+    body {
+        margin: 0;
         padding: 0;
-        display: none; 
     }
 
-    .nav-li {
-        width: 100%;
-        text-align: left;
-        margin: 10px 0;
-    }
-
-    .nav-link {
-        font-size: 16px;
-        padding: 10px;
-        display: block;
-    }
-
-    .firma-logo {
-        width: 100px; 
-    }
-
-    
-    .parrafo {
-        font-size: 32px;
-    }
-
-    .navbar a {
-        font-size: 18px;
+    h1 {
+        font-size: 24px; /* Adjust font size for headings */
     }
 
     .navbar {
-        grid-template-rows: 50 px 20 px;
-        grid-template-columns: (5 1fr);
-        grid-template-areas: 
-        "firma-logo-mobile firma-logo-mobile firma-logo-mobile firma-logo-mobile firma-logo-mobile"
-        "nav-li-mobile nav-li-mobile nav-li-mobile nav-li-mobile nav-li-mobile";
-
+        flex-direction: column; /* Stack navbar items vertically */
     }
 
-    .main-content {
+    .nav-link {
+        padding: 10px; /* Adjust padding for nav links */
+        font-size: 18px; /* Increase font size for better readability */
+    }
+
+    .contenedor {
+        padding: 15px; /* Add padding for the container */
+    }
+
+    .pinceles {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .misobras {
+        display: flex;
         flex-direction: column;
-        gap: 32px;
+        align-items: center;
     }
 
-    .grid-container{
-        grid-template-rows: 50 px 20 px;
-        grid-template-columns: (4 1fr);
-        grid-template-areas: 
-        "grid-item grid-item grid-item grid-item "
-
+    .imagenes-obras {
+        margin-bottom: 20px;
     }
 
-    .misobras{
-        grid-template-rows: 50 px 20 px;
-        grid-template-columns: (3 1fr);
-        grid-template-areas: 
-        "imagenes-obras imagenes-obras imagenes-obras";
-        width: 165px;
-        height: 220px;
+    .firma-logo {
+        width: 80px; /* Adjust logo size */
+    }
+    
+    .dali {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .parrafo {
+        font-size: 18px; /* Base font size */
+        line-height: 1.6; /* Improve readability */
+        margin: 20px 0;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
     }
 
-    footer {
-        flex-direction: column;
+    .p-obras {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin: 10px 0; /* Reduce margin for smaller screens */
     }
+
+    
 }
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
