@@ -77,9 +77,11 @@ h2 {
 }
 
 h5 {
+    font-size: 25px;
     text-align: center;
     margin: 16px 0px;
     color: #000000;
+    font-family: "Roboto", serif;
 }
 
 
@@ -137,6 +139,7 @@ h5 {
     transform: perspective(250px)
     rotate(10deg);
 }
+
 /* Imagenes Influencias */
 .artwork {
     display: flex;
