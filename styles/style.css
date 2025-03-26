@@ -1,14 +1,45 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-}
 
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: grey;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list:hover {
+    color: #f39c12;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
 
 /* Body */
 body {
@@ -18,14 +49,6 @@ body {
 }
 
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-}
 
 /* Titulos */
 h1 {
@@ -60,47 +83,11 @@ h5 {
     color: #000000;
 }
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color:black;
-}
-
-.firma-logo {
-    width: 120px;
-    height: auto;
-}
-
-/* Estilo para la lista de navegación */
-ul.menu {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-li {
-    margin-left: 10px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
-    margin-right: 10px;
-}
-
-.nav-link:hover {
-    color: #f39c12; 
-}
 
 /* Imagenes */
 /* Logo */
 .firma-logo{
+    max-width: 5rem;
     margin: 8px;
     display:inline-block rgba(31, 30, 30, 0.137); 
     border: 1px solid #000000;
@@ -146,16 +133,7 @@ ul.menu {
     width: 450px;  
 }
 
-.manchas{
-    background-image: url(../imagenesproyecto.html/manchasgrises.jpg);
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0;
-    opacity: 0.7;
-    z-index: -1;
-}
+
 
 /* Imagenes Influencias */
 .dali{
@@ -249,11 +227,58 @@ footer {
   padding: 20px;
 }
 
+.abrir-menu {
+    display: none;
+}
+
 /* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
+@media (max-width: 550px) {
+   
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #000000;
+    }
+
+    .cerrar-menu {
+        color:#ddd
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom: 0;
+        background-color: #000000;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: darkgray;
     }
 
     h1 {
@@ -268,17 +293,7 @@ footer {
         font-size: 26px; 
     }
 
-    .navbar {
-        flex-direction: column; 
-    }
-
-    .nav-li {
-        margin-right: 0;
-    }
     
-    .nav-link {
-        margin-right: 0;
-    }
     .contenedor {
         padding: 15px; 
     }
@@ -298,9 +313,7 @@ footer {
         margin-bottom: 20px;
     }
 
-    .firma-logo {
-        width: 80px; 
-    }
+    
 
     .imagen-contacto {
         width: 100%;

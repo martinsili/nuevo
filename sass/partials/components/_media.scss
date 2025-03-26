@@ -1,8 +1,51 @@
 /* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
+@media (max-width: 550px) {
+   
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #000000;
+    }
+
+    .cerrar-menu {
+        color:#ddd
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top:0;
+        right:0;
+        bottom: 0;
+        background-color: #000000;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: darkgray;
     }
 
     h1 {
@@ -17,17 +60,7 @@
         font-size: 26px; 
     }
 
-    .navbar {
-        flex-direction: column; 
-    }
-
-    .nav-li {
-        margin-right: 0;
-    }
     
-    .nav-link {
-        margin-right: 0;
-    }
     .contenedor {
         padding: 15px; 
     }
@@ -47,9 +80,7 @@
         margin-bottom: 20px;
     }
 
-    .firma-logo {
-        width: 80px; 
-    }
+    
 
     .imagen-contacto {
         width: 100%;

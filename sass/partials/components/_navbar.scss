@@ -12,25 +12,15 @@
     height: auto;
 }
 
-/* Estilo para la lista de navegación */
-ul.menu {
+.nav-list {
+    list-style: none;
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    gap: 1rem;
 }
 
-.nav-li {
-    margin-left: 20px;
-}
-
-.nav-link {
+.nav-list li a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
+    color: #000000;
 }
 
-.nav-link:hover {
-    color: #f39c12;
-}
+

@@ -20,3 +20,8 @@
         background-color: darken(map-get($colors, primary), 10%);
     }
 }
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
