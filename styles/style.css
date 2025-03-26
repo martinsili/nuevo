@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: grey;
+    background-color: gray;
 
 }
 
@@ -28,12 +28,12 @@ header {
     gap: 1rem;
 }
 
-.nav-list:hover {
+.nav :hover {
     color: #f39c12;
 }
 .nav-list li a {
     text-decoration: none;
-    color: #000000;
+    color: white;
 }
 
 .abrir-menu,
@@ -49,7 +49,6 @@ body {
 }
 
 
-
 /* Titulos */
 h1 {
     font-family: "Playwrite IT Moderna", serif;
@@ -62,12 +61,12 @@ h1 {
 
 h3 {
     font-family: "Playwrite IT Moderna", serif;
-    font-size: 60px;
-    text-align: left;
+    font-size: 40px;
+    text-align: center;
     margin: 50px;
-    padding: 20px; 
-    
-}
+    padding: 20px;
+ }
+
 
 h2 {
     color: dimgrey;
@@ -130,34 +129,95 @@ h5 {
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
-    width: 450px;  
+    width: 450px;
+    
 }
 
-
-
+.pinceles:hover {
+    transform: perspective(250px)
+    rotate(10deg);
+}
 /* Imagenes Influencias */
-.dali{
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 450px;          
+.artwork {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.artwork div {
+    text-align: center;
+    margin: 20px;
+}
+
+.artwork img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.artwork img:hover {
+    transform: scale(1.1);
 }
 
 
 /* Imagenes Acerca de Mi */
-.martin {
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 450px;            
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
 }
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.flex-item:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.flex-item img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.flex-item img:hover {
+    transform: scale(0.95); 
+}
+
+.text {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+
 
 /* Imagen Contacto */
 .imagen-contacto {
+    width: 500px;
+    height: 650px;
     display: block; 
     margin-left: auto; 
-    margin-right: auto; 
-    width: 450px; /  
+    margin-right: auto;
+    padding: 20px; 
+    width: 450px;   
+}
+
+.imagen-contacto:hover {
+    transform: scale(0.8);
 }
 
 /* Main Content */
@@ -204,28 +264,35 @@ h5 {
     cursor: pointer;
 }
 
-/*footer ver si no lo saco*/
+/*footer*/
 .copyright {
     font-size: 20px;
-    text-align: left;
-    padding: 10px;
-    margin: 60px;
-  }
+    
+}
 
-  .firma-logo {
+.firma-logo {
     margin: 8px;
     border: 1px solid #000000;
     border-radius: 4px;
     width: 70px;
     height: 30px;
-    float: right;
+    float: center;
 }
 
 footer {
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items:end;
   font-size: 10px;
+  margin: 40px;
   padding: 20px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  
 }
+
 
 .abrir-menu {
     display: none;
@@ -262,7 +329,7 @@ footer {
         top:0;
         right:0;
         bottom: 0;
-        background-color: #000000;
+        background-color: black;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
@@ -313,46 +380,30 @@ footer {
         margin-bottom: 20px;
     }
 
-    
-
     .imagen-contacto {
         width: 100%;
         height: auto;
     }
 
-    .martin {
-        width: 100%; 
-        height: auto;
-    } 
     
-    .dali {
-        width: 100%; 
-        height: auto;
-    } 
-    
-    .parrafo {
-        font-size: 18px; 
-        line-height: 1.6; 
-        margin: 20px 0;
-    }
-    
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
     .p-obras {
         font-size: 16px; 
         margin: 10px 0; 
     }
 
+    .flex-item {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 1em;
+      
+    }
+
+    .flex-item:nth-child(even) {
+        width: 100%;
+        flex-direction: column;
+}
+
     
-}
-
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-
-

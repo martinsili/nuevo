@@ -11,3 +11,12 @@
     border: 1px solid #ddd;
     text-align: center;
 }
+
+.main-content {
+    margin-top: 80px;
+    display:flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+}
+

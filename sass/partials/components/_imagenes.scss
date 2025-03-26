@@ -47,47 +47,60 @@
     width: 450px;  
 }
 
-.manchas{
-    background-image: url(../imagenesproyecto.html/manchasgrises.jpg);
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0;
-    opacity: 0.7;
-    z-index: -1;
+.pinceles:hover {
+    transform: perspective(250px)
+    rotate(10deg);
 }
 
 
 /* Imagenes Acerca de Mi */
 .martin {
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
+    display: flex; 
+    justify-self: center; 
+    margin: 30px;
+    padding: 20px; 
     width: 450px;            
 }
 
 
 /* Imagen Contacto */
+/* Imagen Contacto */
 .imagen-contacto {
+    width: 500px;
+    height: 650px;
     display: block; 
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto;
+    padding: 20px; 
     width: 450px;   
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+.imagen-contacto:hover {
+    transform: scale(0.8);
 }
 
 /* Imagenes Influencias */
-.dali{
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 450px;          
+.artwork {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+.artwork div {
+    text-align: center;
+    margin: 20px;
+}
+
+.artwork img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.artwork img:hover {
+    transform: scale(1.1);
+}
 
 

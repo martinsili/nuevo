@@ -1,0 +1,45 @@
+h2 {
+    font-size: 2.5em;
+    color: #2d3b5c;
+    margin-bottom: 20px;
+}
+
+/* Contenedor alternado para texto y imágenes */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.flex-item:nth-child(even) {
+    flex-direction: row-reverse; /* Imagen a la izquierda, texto a la derecha */
+}
+
+.flex-item img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.flex-item img:hover {
+    transform: scale(0.95); /* Animación de imagen al pasar el ratón */
+}
+
+.text {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+}
