@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Federant&display=swap');
 
 /* Reset */
 * {
@@ -20,6 +21,15 @@ header {
     padding: 2rem;
     background-color: gray;
 
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+     
 }
 
 .nav-list {
@@ -51,7 +61,7 @@ body {
 
 /* Titulos */
 h1 {
-    font-family: "Playwrite IT Moderna", serif;
+    font-family: "Roboto", serif;
     font-size: 60px;
     text-align: center;
     color: #000000;
@@ -127,12 +137,18 @@ h5 {
 
 /* Imagenes Inicio */
 .pinceles {
+    text-decoration: none;
+    padding: 16px;
     border: 1px solid black;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 450px;
-    
+    border-radius: 5px;
+    align-items: center;
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    width: 300px;
 }
 
 .pinceles:hover {
@@ -207,7 +223,6 @@ h5 {
 }
 
 
-
 /* Imagen Contacto */
 .imagen-contacto {
     width: 500px;
@@ -224,12 +239,6 @@ h5 {
 }
 
 /* Main Content */
-.parrafo {
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-}
-
 .p-obras{
     margin: 0;
     padding: 0;
@@ -279,21 +288,17 @@ h5 {
     border-radius: 4px;
     width: 70px;
     height: 30px;
-    float: center;
+    float: center:
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
-  align-items:end;
-  font-size: 10px;
-  margin: 40px;
-  padding: 20px;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    padding: 2rem;
+    background-color: gray;
+    color: #f2f2f2;
 }
 
 
