@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Federant&display=swap');
+
 
 /* Reset */
 * {
@@ -20,8 +20,6 @@ header {
     justify-content: space-between;
     padding: 2rem;
     background-color: gray;
-
-    
 }
 
 .main {
@@ -29,9 +27,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content:center;
-     
 }
 
+.nav{
+
+}
 .nav-list {
     list-style: none;
     display: flex;
@@ -61,7 +61,7 @@ body {
 
 /* Titulos */
 h1 {
-    font-family: "Roboto", serif;
+    font-family: "Rock Salt", serif;
     font-size: 60px;
     text-align: center;
     color: #000000;
@@ -79,11 +79,11 @@ h3 {
 
 
 h2 {
+    font-family: "Dancing Script", serif;
     color: dimgrey;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
-    font-family: "Rock Salt";
-    margin: 30px;
+    margin: 40px;
 }
 
 h5 {
@@ -122,7 +122,6 @@ h5 {
     padding: 16px;
     border: 1px solid black;
     border-radius: 5px;
-    
 }
 
 .imagenes-obras img{
@@ -148,7 +147,8 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
-    width: 300px;
+    width: 450px;
+    height: 550px;
 }
 
 .pinceles:hover {
@@ -159,14 +159,15 @@ h5 {
 /* Imagenes Influencias */
 .artwork {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .artwork div {
     text-align: center;
-    margin: 20px;
 }
 
 .artwork img {
@@ -174,6 +175,8 @@ h5 {
     height: 350px;
     border-radius: 8px;
     transition: transform 0.3s;
+    margin: 20px; 
+    gap: 70px; 
 }
 
 .artwork img:hover {
@@ -182,7 +185,6 @@ h5 {
 
 
 /* Imagenes Acerca de Mi */
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +224,6 @@ h5 {
     max-width: 600px;
 }
 
-
 /* Imagen Contacto */
 .imagen-contacto {
     width: 500px;
@@ -234,16 +235,17 @@ h5 {
     width: 450px;   
 }
 
-.imagen-contacto:hover {
-    transform: scale(0.8);
-}
-
 /* Main Content */
 .p-obras{
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 25px;
+}
+.p-obras2 {margin: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
 }
 
 /* Form */
@@ -279,7 +281,6 @@ h5 {
 /*footer*/
 .copyright {
     font-size: 20px;
-    
 }
 
 .firma-logo {
@@ -301,14 +302,13 @@ footer {
     color: #f2f2f2;
 }
 
-
 .abrir-menu {
     display: none;
 }
 
 /*animacion*/
 .animate__animated animate__rotateIn{
-    --animate-duration: 2s;
+    --animate-duration: 3000s;
 }
 
 /* Media Query para dispositivos móviles */
@@ -322,6 +322,7 @@ footer {
         background-color: transparent;
         cursor: pointer;
     }
+
 
     .abrir-menu {
         color: #000000;
@@ -373,7 +374,6 @@ footer {
         font-size: 26px; 
     }
 
-    
     .contenedor {
         padding: 15px; 
     }
@@ -398,7 +398,6 @@ footer {
         height: auto;
     }
 
-    
     .p-obras {
         font-size: 16px; 
         margin: 10px 0; 
@@ -411,12 +410,11 @@ footer {
 
     .text {
         font-size: 1em;
-      
     }
 
     .flex-item:nth-child(even) {
         width: 100%;
         flex-direction: column;
-}
+    }
 
-    
+}

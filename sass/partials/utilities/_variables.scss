@@ -1,19 +1,18 @@
-.parrafo {
-    font-size: 44px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .p-obras{
+.p-obras{
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 25px;
 }
 
-.p-obras{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 25px;
+.p-obras2 {margin: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+/*animacion*/
+.animate__animated {
+  --animate-duration: 3000s;
 }
