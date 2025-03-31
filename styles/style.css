@@ -29,9 +29,6 @@ header {
     justify-content:center;
 }
 
-.nav{
-
-}
 .nav-list {
     list-style: none;
     display: flex;
@@ -93,7 +90,6 @@ h5 {
     color: #000000;
     font-family: "Roboto", serif;
 }
-
 
 /* Imagenes */
 /* Logo */
@@ -289,7 +285,7 @@ h5 {
     border-radius: 4px;
     width: 70px;
     height: 30px;
-    float: center:
+    float: center;
 }
 
 footer {
@@ -312,12 +308,11 @@ footer {
 }
 
 /* Media Query para dispositivos móviles */
-@media (max-width: 550px) {
-   
+@media (max-width: 568px) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
-        border: 0;
+        border: 0px;
         font-size: 1.25rem;
         background-color: transparent;
         cursor: pointer;
