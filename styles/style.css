@@ -313,7 +313,7 @@ footer {
 }
 
 /* Media Query para dispositivos móviles */
-@media (max-width: 568px) {
+@media (max-width: 550px) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
