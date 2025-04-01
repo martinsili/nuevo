@@ -391,15 +391,15 @@ footer {
     }
 
     .misobras {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: auto; 
         height: auto; 
     }
 
     .imagenes-obras {
-        margin-bottom: 20px;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
 
     .imagen-contacto {
