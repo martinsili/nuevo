@@ -11,7 +11,6 @@
 }
 
 /* Obras */
-
 .misobras {
     margin: 40px 40px;
     display: flex;
@@ -62,7 +61,6 @@
 }
 
 /* Imagenes Acerca de Mi */
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -93,17 +91,6 @@
 
 .flex-item img:hover {
     transform: scale(0.95); 
-}
-
-/* Imagen Contacto */
-.imagen-contacto {
-    width: 500px;
-    height: 650px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    padding: 20px; 
-    width: 450px;   
 }
 
 .imagen-contacto:hover {
