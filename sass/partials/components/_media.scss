@@ -1,14 +1,14 @@
 /* Media Query para dispositivos móviles */
-@media (max-width: 568px) {
-   
+@media (max-width: 550px) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
-        border: 0;
+        border: 0px;
         font-size: 1.25rem;
         background-color: transparent;
         cursor: pointer;
     }
+
 
     .abrir-menu {
         color: #000000;
@@ -29,7 +29,7 @@
         top:0;
         right:0;
         bottom: 0;
-        background-color: #000000;
+        background-color: black;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
@@ -60,7 +60,6 @@
         font-size: 26px; 
     }
 
-    
     .contenedor {
         padding: 15px; 
     }
@@ -74,6 +73,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto; 
+        height: auto; 
     }
 
     .imagenes-obras {
@@ -85,29 +86,39 @@
         height: auto;
     }
 
-    .martin {
-        width: 100%; 
-        height: auto;
-    } 
-    
-    .dali {
-        width: 100%; 
-        height: auto;
-    } 
-    
-    .parrafo {
-        font-size: 18px; 
-        line-height: 1.6; 
-        margin: 20px 0;
-    }
-    
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
     .p-obras {
         font-size: 16px; 
         margin: 10px 0; 
+        text-align: center;
+    }
+
+    .flex-item {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+
+    .flex-item:nth-child(even) {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .textarea {
+        width:auto;
+        height: auto;
+    }
+
+    .grid-item {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: inline;
     }
 }
-

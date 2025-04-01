@@ -106,11 +106,13 @@ h5 {
 /* Obras */
 .misobras {
     margin: 40px 40px;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    
 }
 
 .imagenes-obras{
@@ -256,6 +258,11 @@ h5 {
     background-color: #f2f2f2;
     border: 1px solid #ddd;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+
 }
 
 /* Button Style */
@@ -387,6 +394,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto; 
+        height: auto; 
     }
 
     .imagenes-obras {
@@ -401,11 +410,13 @@ footer {
     .p-obras {
         font-size: 16px; 
         margin: 10px 0; 
+        text-align: center;
     }
 
     .flex-item {
         width: 100%;
         flex-direction: column;
+        height: auto;
     }
 
     .text {
@@ -415,6 +426,21 @@ footer {
     .flex-item:nth-child(even) {
         width: 100%;
         flex-direction: column;
+    }
+
+    .textarea {
+        width:auto;
+        height: auto;
+    }
+
+    .grid-item {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: inline;
     }
 
 }
